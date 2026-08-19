@@ -5,7 +5,7 @@
 #![allow(non_snake_case)]
 use crate::cparcel::{OHIPCRemoteStub, OH_IPC_MemAllocator};
 #[cfg(doc)]
-use crate::error_code::OH_IPC_ErrorCode;
+use crate::error_code::*;
 use ohos_sys_opaque_types::{OHIPCParcel, OHIPCRemoteProxy};
 
 /// Defines an <b>OHIPCDeathRecipient</b> object, which is used to receive a notification

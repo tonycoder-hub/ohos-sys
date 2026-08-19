@@ -6,9 +6,9 @@
 #[cfg(all(doc, feature = "api-11"))]
 use crate::avcodec_audiocodec::OH_AudioCodec_GetOutputDescription;
 #[cfg(doc)]
-use crate::avcodec_videodecoder::OH_VideoDecoder_GetOutputDescription;
+use crate::avcodec_videodecoder::*;
 #[cfg(doc)]
-use crate::avcodec_videoencoder::OH_VideoEncoder_GetOutputDescription;
+use crate::avcodec_videoencoder::*;
 
 impl OH_AVErrCode {
     /// the operation completed successfully.

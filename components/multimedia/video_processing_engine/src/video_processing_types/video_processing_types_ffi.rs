@@ -3,15 +3,10 @@
 #![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
+#[cfg(all(doc, feature = "api-13", feature = "image-processing"))]
+use crate::image_processing::*;
 #[cfg(doc)]
-use crate::image_processing::OH_ImageProcessing_Create;
-#[cfg(doc)]
-use crate::video_processing::{
-    OH_VideoProcessingCallback_Create, OH_VideoProcessing_Create, OH_VideoProcessing_GetParameter,
-    OH_VideoProcessing_IsColorSpaceConversionSupported, OH_VideoProcessing_RegisterCallback,
-    OH_VideoProcessing_RenderOutputBuffer, OH_VideoProcessing_SetParameter,
-    OH_VideoProcessing_Start, OH_VideoProcessing_Stop,
-};
+use crate::video_processing::*;
 
 /// Define the video processing object.
 ///

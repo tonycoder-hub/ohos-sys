@@ -5,7 +5,7 @@
 #![allow(non_snake_case)]
 use crate::rdb_types::Data_Asset;
 #[cfg(doc)]
-use crate::relational_store_error_code::OH_Rdb_ErrCode;
+use crate::relational_store_error_code::*;
 
 #[cfg(feature = "api-11")]
 #[cfg_attr(docsrs, doc(cfg(feature = "api-11")))]

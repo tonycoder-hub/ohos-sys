@@ -9,7 +9,7 @@ use crate::avbuffer_info::OH_AVCodecBufferAttr;
 use crate::averrors::OH_AVErrCode;
 use crate::avformat::OH_AVFormat;
 #[cfg(doc)]
-use crate::avformat::OH_AVFormat_Destroy;
+use crate::avformat::*;
 use ohos_sys_opaque_types::OH_NativeBuffer;
 
 /// Forward declaration of OH_AVBuffer.

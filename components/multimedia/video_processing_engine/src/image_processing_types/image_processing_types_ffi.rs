@@ -4,13 +4,9 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 #[cfg(doc)]
-use crate::image_processing::{
-    OH_ImageProcessing_Create, OH_ImageProcessing_GetParameter,
-    OH_ImageProcessing_IsColorSpaceConversionSupported, OH_ImageProcessing_IsCompositionSupported,
-    OH_ImageProcessing_IsDecompositionSupported, OH_ImageProcessing_SetParameter,
-};
-#[cfg(doc)]
-use crate::video_processing::{OH_VideoProcessing_GetParameter, OH_VideoProcessing_SetParameter};
+use crate::image_processing::*;
+#[cfg(all(doc, feature = "video-processing"))]
+use crate::video_processing::*;
 
 /// Define the object for image processing.
 ///

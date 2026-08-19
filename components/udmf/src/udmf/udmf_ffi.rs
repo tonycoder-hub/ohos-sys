@@ -4,9 +4,7 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 #[cfg(doc)]
-use crate::Udmf_ErrCode;
-#[cfg(all(doc, feature = "api-15"))]
-use crate::Udmf_ListenerStatus;
+use crate::udmf_err_code::*;
 use ohos_sys_opaque_types::*;
 
 pub const UDMF_KEY_BUFFER_LEN: u32 = 512;

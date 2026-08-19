@@ -5,7 +5,7 @@
 #![allow(non_snake_case)]
 use crate::cparcel::OH_IPC_MemAllocator;
 #[cfg(doc)]
-use crate::error_code::OH_IPC_ErrorCode;
+use crate::error_code::*;
 
 extern "C" {
     /// Joints this thread to the IPC worker thread pool.

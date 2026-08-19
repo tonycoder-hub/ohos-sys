@@ -7,7 +7,7 @@
 #[allow(unused_imports)]
 use crate::avbuffer_info::OH_AVCodecBufferAttr;
 #[cfg(doc)]
-use crate::avcodec_base::OH_AVCodecOnNeedInputData;
+use crate::avcodec_base::*;
 #[allow(unused_imports)]
 use crate::avcodec_base::{OH_AVCodec, OH_AVCodecAsyncCallback};
 #[allow(unused_imports)]

@@ -4,7 +4,7 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 #[cfg(doc)]
-use crate::Udmf_ErrCode;
+use crate::udmf_err_code::*;
 #[cfg(feature = "api-13")]
 use ohos_sys_opaque_types::OH_PixelmapNative;
 #[cfg(feature = "api-14")]

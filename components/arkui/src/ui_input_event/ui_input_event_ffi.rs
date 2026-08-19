@@ -4,11 +4,11 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 #[cfg(doc)]
-use crate::native_gesture::OH_ArkUI_GestureEvent_GetRawInputEvent;
+use crate::native_gesture::*;
 #[cfg(all(doc, feature = "api-14"))]
-use crate::native_key_event::OH_ArkUI_KeyEvent_GetType;
+use crate::native_key_event::*;
 #[cfg(doc)]
-use crate::native_node::ArkUI_NodeEvent;
+use crate::native_node::*;
 use crate::native_type::*;
 
 /// Defines the UI input event.

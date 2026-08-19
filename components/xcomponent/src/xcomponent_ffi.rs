@@ -4,11 +4,9 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 #[cfg(doc)]
-use crate::xcomponent_result_ffi::{
-    OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER, OH_NATIVEXCOMPONENT_RESULT_SUCCESS,
-};
+use crate::xcomponent_result_ffi::*;
 #[cfg(all(doc, feature = "arkui"))]
-use arkui_sys::ui_input_event::ArkUI_ModifierKeyName;
+use arkui_sys::ui_input_event::*;
 #[cfg(feature = "api-13")]
 use ohos_sys_opaque_types::ArkUI_AccessibilityProvider;
 #[cfg(feature = "api-22")]

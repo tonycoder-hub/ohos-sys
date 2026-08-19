@@ -4,21 +4,21 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 #[cfg(doc)]
-use crate::drag_and_drop::{ArkUI_DragEvent, ArkUI_PreDragStatus};
+use crate::drag_and_drop::*;
 #[cfg(doc)]
 use crate::drawable_descriptor::ArkUI_DrawableDescriptor;
 #[cfg(doc)]
-use crate::native_animate::ArkUI_TransitionEffect;
+use crate::native_animate::*;
 #[cfg(all(doc, feature = "api-20"))]
-use crate::native_render::ArkUI_RenderNodeClipOption;
+use crate::native_render::*;
 use crate::native_type::*;
 #[cfg(doc)]
-use crate::styled_string::{ArkUI_StyledString, ArkUI_TextLayoutManager};
+use crate::styled_string::*;
 #[cfg(feature = "api-22")]
 use crate::ui_input_event::ArkUI_TouchTestInfo;
 use crate::ui_input_event::ArkUI_UIInputEvent;
 #[cfg(doc)]
-use crate::ui_input_event::{ArkUI_CoastingAxisEvent, OH_ArkUI_UIInputEvent_GetCoastingAxisEvent};
+use crate::ui_input_event::*;
 #[cfg(feature = "api-12")]
 use ohos_sys_opaque_types::ArkUI_ContextHandle;
 #[cfg(feature = "api-15")]
