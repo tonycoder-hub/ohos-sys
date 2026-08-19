@@ -8,10 +8,14 @@
 use crate::avbuffer::OH_AVBuffer;
 #[allow(unused_imports)]
 use crate::avcodec_base::{OH_AVCodec, OH_AVCodecCallback};
+#[cfg(doc)]
+use crate::avcodec_base::{OH_AVCodecOnNeedInputBuffer, OH_AVCodecOnNewOutputBuffer};
 #[allow(unused_imports)]
 use crate::averrors::OH_AVErrCode;
 #[allow(unused_imports)]
 use crate::avformat::OH_AVFormat;
+#[cfg(doc)]
+use crate::avformat::OH_AVFormat_Destroy;
 
 /// MediaKeySession field.
 ///

@@ -14,6 +14,11 @@ use crate::avbuffer_info::OH_AVCodecBufferAttr;
 use crate::avcodec_base::OH_AVCodecCallback;
 #[allow(unused_imports)]
 use crate::avcodec_base::{OH_AVCodec, OH_AVCodecAsyncCallback};
+#[cfg(doc)]
+use crate::avcodec_base::{
+    OH_AVCodecOnNeedInputBuffer, OH_AVCodecOnNeedInputData, OH_AVCodecOnNewOutputBuffer,
+    OH_AVCodecOnNewOutputData,
+};
 #[allow(unused_imports)]
 use crate::averrors::OH_AVErrCode;
 #[allow(unused_imports)]

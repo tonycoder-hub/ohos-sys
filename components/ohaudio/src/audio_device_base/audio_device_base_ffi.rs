@@ -4,6 +4,10 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 use crate::audio_common::OH_AudioCommon_Result;
+#[cfg(all(doc, feature = "api-12"))]
+use crate::audio_routing_manager::{
+    OH_AudioRoutingManager_GetDevices, OH_AudioRoutingManager_ReleaseDevices,
+};
 use crate::audiostream_base::OH_AudioStream_EncodingType;
 
 #[cfg(feature = "api-12")]

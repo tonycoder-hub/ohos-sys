@@ -3,6 +3,12 @@
 #![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
+#[cfg(all(doc, feature = "api-11"))]
+use crate::avcodec_audiocodec::OH_AudioCodec_GetOutputDescription;
+#[cfg(doc)]
+use crate::avcodec_videodecoder::OH_VideoDecoder_GetOutputDescription;
+#[cfg(doc)]
+use crate::avcodec_videoencoder::OH_VideoEncoder_GetOutputDescription;
 
 impl OH_AVErrCode {
     /// the operation completed successfully.

@@ -6,10 +6,27 @@
 #![allow(deprecated)]
 #[cfg(feature = "api-11")]
 use crate::avbuffer::OH_AVBuffer;
+#[cfg(all(doc, feature = "api-11"))]
+use crate::avbuffer::OH_AVBuffer_SetParameter;
 use crate::avbuffer_info::OH_AVCodecBufferAttr;
+#[cfg(all(doc, feature = "api-10"))]
+use crate::avcapability::{
+    OH_AVCapability_GetFeatureProperties, OH_AVCapability_IsFeatureSupported,
+};
+#[cfg(doc)]
+use crate::avcodec_videodecoder::{
+    OH_VideoDecoder_Configure, OH_VideoDecoder_GetOutputDescription,
+};
+#[cfg(doc)]
+use crate::avcodec_videoencoder::{
+    OH_VideoEncodeBitrateMode, OH_VideoEncoder_GetInputDescription,
+    OH_VideoEncoder_OnNeedInputParameter,
+};
 #[allow(unused_imports)]
 use crate::averrors::OH_AVErrCode;
 use crate::avformat::OH_AVFormat;
+#[cfg(doc)]
+use crate::avformat::{OH_AVFormat_GetIntValue, OH_AVPixelFormat};
 use crate::avmemory::OH_AVMemory;
 
 /// Forward declaration of OH_AVCodec.

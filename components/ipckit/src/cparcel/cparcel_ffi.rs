@@ -3,6 +3,8 @@
 #![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
+#[cfg(doc)]
+use crate::error_code::OH_IPC_ErrorCode;
 use ohos_sys_opaque_types::{OHIPCParcel, OHIPCRemoteProxy};
 
 /// Defines an IPC remote service object.

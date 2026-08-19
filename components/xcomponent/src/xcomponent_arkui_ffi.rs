@@ -4,6 +4,10 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 use super::xcomponent_ffi::*;
+#[cfg(doc)]
+use crate::xcomponent_result_ffi::{
+    OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER, OH_NATIVEXCOMPONENT_RESULT_SUCCESS,
+};
 use arkui_sys::native_type::ArkUI_NodeHandle;
 use arkui_sys::ui_input_event::{ArkUI_UIInputEvent, ArkUI_UIInputEvent_Type, HitTestMode};
 
