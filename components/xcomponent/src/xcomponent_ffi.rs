@@ -3,8 +3,6 @@
 #![allow(non_upper_case_globals)]
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
-#[cfg(doc)]
-use crate::xcomponent_result_ffi::*;
 #[cfg(all(doc, feature = "arkui"))]
 use arkui_sys::ui_input_event::*;
 #[cfg(feature = "api-13")]
@@ -987,8 +985,8 @@ extern "C" {
     /// # Returns
     ///
     /// * Returns the status code of the execution.
-    /// [`OH_NATIVEXCOMPONENT_RESULT_SUCCESS`] get windowX success.
-    /// [`OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER`] component is NULL, windowX is NULL
+    /// [`XcomponentResult::SUCCESS`](crate::XcomponentResult::SUCCESS) get windowX success.
+    /// [`XcomponentResult::BAD_PARAMETER`](crate::XcomponentResult::BAD_PARAMETER) component is NULL, windowX is NULL
     ///
     /// or native XComponent is NULL.
     ///
@@ -1019,8 +1017,8 @@ extern "C" {
     /// # Returns
     ///
     /// * Returns the status code of the execution.
-    /// [`OH_NATIVEXCOMPONENT_RESULT_SUCCESS`] get windowY success.
-    /// [`OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER`] component is NULL, windowY is NULL
+    /// [`XcomponentResult::SUCCESS`](crate::XcomponentResult::SUCCESS) get windowY success.
+    /// [`XcomponentResult::BAD_PARAMETER`](crate::XcomponentResult::BAD_PARAMETER) component is NULL, windowY is NULL
     ///
     /// or native XComponent is NULL.
     ///
@@ -1051,8 +1049,8 @@ extern "C" {
     /// # Returns
     ///
     /// * Returns the status code of the execution.
-    /// [`OH_NATIVEXCOMPONENT_RESULT_SUCCESS`] get displayX success.
-    /// [`OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER`] component is NULL, displayX is NULL
+    /// [`XcomponentResult::SUCCESS`](crate::XcomponentResult::SUCCESS) get displayX success.
+    /// [`XcomponentResult::BAD_PARAMETER`](crate::XcomponentResult::BAD_PARAMETER) component is NULL, displayX is NULL
     ///
     /// or native XComponent is NULL.
     ///
@@ -1083,8 +1081,8 @@ extern "C" {
     /// # Returns
     ///
     /// * Returns the status code of the execution.
-    /// [`OH_NATIVEXCOMPONENT_RESULT_SUCCESS`] get displayY success.
-    /// [`OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER`] component is NULL, displayY is NULL
+    /// [`XcomponentResult::SUCCESS`](crate::XcomponentResult::SUCCESS) get displayY success.
+    /// [`XcomponentResult::BAD_PARAMETER`](crate::XcomponentResult::BAD_PARAMETER) component is NULL, displayY is NULL
     ///
     /// or native XComponent is NULL.
     ///
@@ -1687,8 +1685,8 @@ extern "C" {
     ///
     /// # Returns
     ///
-    /// * Returns [`OH_NATIVEXCOMPONENT_RESULT_SUCCESS`] if the operation is successful.
-    /// Returns [`OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER`] if a parameter error occurs.
+    /// * Returns [`XcomponentResult::SUCCESS`](crate::XcomponentResult::SUCCESS) if the operation is successful.
+    /// Returns [`XcomponentResult::BAD_PARAMETER`](crate::XcomponentResult::BAD_PARAMETER) if a parameter error occurs.
     ///
     /// Available since API-level: 13
     #[cfg(feature = "api-13")]
@@ -1708,9 +1706,9 @@ extern "C" {
     /// # Returns
     ///
     /// * Returns the status code of the execution.
-    /// [`OH_NATIVEXCOMPONENT_RESULT_SUCCESS`] the callback function is successfully registered.
+    /// [`XcomponentResult::SUCCESS`](crate::XcomponentResult::SUCCESS) the callback function is successfully registered.
     ///
-    /// [`OH_NATIVEXCOMPONENT_RESULT_BAD_PARAMETER`] component is nullptr or callback is nullptr.
+    /// [`XcomponentResult::BAD_PARAMETER`](crate::XcomponentResult::BAD_PARAMETER) component is nullptr or callback is nullptr.
     ///
     ///
     /// Available since API-level: 14

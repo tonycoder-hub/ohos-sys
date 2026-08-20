@@ -1,11 +1,13 @@
 mod dir_conf;
 mod doc_imports;
+mod doc_links;
 mod enum_prefix;
 mod header_conf;
 mod opaque_types;
 
 use crate::dir_conf::get_module_bindings_config;
 use crate::doc_imports::apply_doc_imports;
+use crate::doc_links::retarget_doc_links;
 use crate::header_conf::get_bindings_config;
 use anyhow::{anyhow, bail, Context};
 use bindgen::callbacks::EnumVariantValue;
@@ -386,7 +388,9 @@ impl bindgen::callbacks::ParseCallbacks for DoxygenCommentCb {
         }
         // Replace manual linebreaks in doxygen with double linebreaks for markdown.
         let comment = comment.replace("\\n", "\n");
-        Some(doxygen_rs::transform(comment.trim_end_matches("\n")))
+        Some(retarget_doc_links(doxygen_rs::transform(
+            comment.trim_end_matches("\n"),
+        )))
     }
 
     fn parse_comments_for_attributes(&self, comment: &str) -> Vec<CodeGenAttributes> {

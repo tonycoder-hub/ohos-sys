@@ -176,15 +176,9 @@ fn doc_imports_for(output_rel: &str) -> &'static [&'static str] {
             "#[cfg(doc)]",
             "use crate::udmf_err_code::*;",
         ],
-        "components/xcomponent/src/xcomponent_arkui_ffi.rs" => &[
-            "#[cfg(doc)]",
-            "use crate::xcomponent_result_ffi::*;",
-        ],
         "components/xcomponent/src/xcomponent_ffi.rs" => &[
             "#[cfg(all(doc, feature = \"arkui\"))]",
             "use arkui_sys::ui_input_event::*;",
-            "#[cfg(doc)]",
-            "use crate::xcomponent_result_ffi::*;",
         ],
         _ => &[],
     }
