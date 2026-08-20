@@ -6,7 +6,7 @@
 #[cfg(doc)]
 use crate::drag_and_drop::*;
 #[cfg(doc)]
-use crate::drawable_descriptor::ArkUI_DrawableDescriptor;
+use crate::drawable_descriptor::*;
 #[cfg(doc)]
 use crate::native_animate::*;
 #[cfg(all(doc, feature = "api-20"))]

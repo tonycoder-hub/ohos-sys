@@ -4,7 +4,7 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 #[cfg(all(doc, feature = "api-11"))]
-use crate::avcodec_audiocodec::OH_AudioCodec_GetOutputDescription;
+use crate::avcodec_audiocodec::*;
 #[cfg(doc)]
 use crate::avcodec_videodecoder::*;
 #[cfg(doc)]

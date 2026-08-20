@@ -26,10 +26,8 @@ fn doc_imports_for(output_rel: &str) -> &'static [&'static str] {
         "components/arkui/src/native_node/native_node_ffi.rs" => &[
             "#[cfg(doc)]",
             "use crate::drag_and_drop::*;",
-            // Not a glob: both `drag_and_drop` and `drawable_descriptor` re-export
-            // `OH_PixelmapNative`, so globbing both is a name clash.
             "#[cfg(doc)]",
-            "use crate::drawable_descriptor::ArkUI_DrawableDescriptor;",
+            "use crate::drawable_descriptor::*;",
             "#[cfg(doc)]",
             "use crate::native_animate::*;",
             "#[cfg(all(doc, feature = \"api-20\"))]",
@@ -108,10 +106,8 @@ fn doc_imports_for(output_rel: &str) -> &'static [&'static str] {
             &["#[cfg(doc)]", "use crate::avcodec_base::*;"]
         }
         "components/multimedia/player_framework/src/averrors/averrors_ffi.rs" => &[
-            // Not a glob: `avcodec_audiocodec` and `avcodec_videodecoder` both
-            // define `MediaKeySession`.
             "#[cfg(all(doc, feature = \"api-11\"))]",
-            "use crate::avcodec_audiocodec::OH_AudioCodec_GetOutputDescription;",
+            "use crate::avcodec_audiocodec::*;",
             "#[cfg(doc)]",
             "use crate::avcodec_videodecoder::*;",
             "#[cfg(doc)]",
